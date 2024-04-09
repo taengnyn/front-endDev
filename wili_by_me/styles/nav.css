@@ -1,0 +1,51 @@
+.navbar {
+    display: flex;
+    background-color: rgb(152, 120, 248);
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list a{
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav-list a:hover{
+    color: rgb(92, 92, 92);
+}
+
+.nav-btn {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .navbar {
+        justify-content: space-between;
+    }
+    .nav-btn {
+        font-size: 2em;
+        padding-inline: 10px;
+        padding-bottom: 3px;
+        border: none;
+        background-color: rgb(79, 46, 248);
+        color: aliceblue;
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .drop:hover .nav-list {
+        display: block;
+        position: absolute;
+        right: 1px;
+
+        background-color: rgb(101, 96, 254);
+    }
+}
