@@ -1,0 +1,152 @@
+/* main styles */
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Heebo', sans-serif;
+    color: black;
+}
+
+.conteiner{
+    max-width: 860px;
+    margin: 0 auto;
+    padding-bottom: 71px;
+}
+
+h1{
+    font-size: 44px;
+    /* border: 60px; */
+    padding-bottom: 20px;
+}
+
+h2{
+    font-size: 28px;
+    width: 682px;
+    left: 235px;
+    top: 269px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+/* не знаю в чому проблема, але дата не відображається як потрібно на макеті */
+
+.first{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 750px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+/* .h3{
+    padding-top: 0;
+    display: flex;
+    height: 30px;
+} */
+
+.data{
+    font-size: 18px;
+    color: #0a0a2a;
+    padding-right: 21px;
+    border-right: 2px solid #000;
+}
+.topic{
+    font-size: 18px;
+    color: #4a4a4a;
+    margin-left: 21px;
+}
+
+/* Header styles */
+
+.menu{
+   display: flex; 
+   justify-content: flex-end;
+   max-width: 1150px;
+   /* border: 1px solid #cc99f411; */
+   margin: 0 auto;
+   padding: 0 45px;
+   margin-bottom: 100px;
+}
+
+.menu>a{
+    padding:15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.burger{
+    width: 30px;
+    height: 18px;
+    margin-left: auto;
+    display: none;
+    border: none;
+    background-image: url('images/menu.svg');
+    background-color: transparent;
+}
+
+.media{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.media img{
+    padding-inline: 15px;
+}
+.bottom p{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+
+@media (max-width:  768px) {
+    .menu{
+        padding-top: 20px;
+        cursor: pointer;
+    }
+
+    .menu a{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .conteiner{
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        padding-left: 15px;
+        width: auto;
+    }
+
+    h1{
+        font-size: 31px;
+        line-height: 40px;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    .h3{
+        width: auto;
+    }
+
+    p{
+        text-align: left;
+        font-size: 16px;
+        line-height: 24px;
+        
+    }
+
+    .text{
+        /* text-align: left; */
+        width: auto;
+    }
+}
+
+

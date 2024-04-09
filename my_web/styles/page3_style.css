@@ -1,0 +1,165 @@
+/* main styles */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Heebo', sans-serif;
+    color: black;
+}
+
+.conteiner{
+    max-width: 860px;
+    margin: 0 auto;
+    /* border: 1px solid #fcd1d1; */
+}
+
+.featured-works{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 650px;
+}
+
+.description a{
+    text-decoration: none;
+    color: black;
+}
+/* Header styles */
+
+.menu{
+    display: flex; 
+    justify-content: flex-end;
+    max-width: 1150px;
+    /* border: 1px solid #cc99f411; */
+    margin: 0 auto;
+    padding: 0 45px;
+    margin-bottom: 100px;
+}
+ 
+.menu>a{
+     padding:15px;
+     font-size: 20px;
+     text-decoration: none;
+     color: black;
+}
+
+.burger{
+    width: 30px;
+    height: 18px;
+    margin-left: auto;
+    display: none;
+    border: none;
+    background-image: url('images/menu.svg');
+    background-color: transparent;
+}
+ 
+
+/* Featured Works */
+
+h2{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+}
+
+.work{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.work img{
+    border-radius: 6px;
+    width: 250px;
+    height: 180px;
+    margin-right: 18px;
+}
+
+.work h3{
+    margin-top: 0;
+}
+
+.h3 a{
+    text-decoration: none;
+    color: black;
+}
+
+.topic{
+    font-size: 20px;
+    color: #d5d5d5;
+    padding-left: 25px;
+    line-height: 29px;
+}
+
+.bage{
+    background-color: #0a0a2a;
+    color: aliceblue;
+    font-size: 18px;
+    border-radius: 16px;
+    padding: 0px 10px;
+    
+}
+
+.work p{
+    margin-bottom: 25px;
+}
+
+/* Bottom media links */
+
+.media{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.media img{
+    padding-inline: 15px;
+}
+.bottom p{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+@media(max-width: 768px){
+    .menu{
+        padding-top: 20px;
+        cursor: pointer;
+    }
+
+    .menu a{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+    }
+}
+
+@media(max-width: 786px){
+    .featured-works{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2{
+        text-align: center;
+    }
+    
+    .work{
+        flex-direction: column;
+        width: 345px;
+    }
+
+    .work img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

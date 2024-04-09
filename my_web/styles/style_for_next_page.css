@@ -1,0 +1,169 @@
+/* main styles */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Heebo', sans-serif;
+    color: black;
+}
+
+.conteiner{
+    max-width: 860px;
+    margin: 0 auto;
+    /* border: 1px solid #fcd1d1; */
+}
+
+/* Header styles */
+
+.menu{
+   display: flex; 
+   justify-content: flex-end;
+   max-width: 1150px;
+   /* border: 1px solid #cc99f411; */
+   margin: 0 auto;
+   padding: 0 45px;
+   margin-bottom: 100px;
+}
+
+.menu>a{
+    padding:15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.burger{
+    width: 30px;
+    height: 18px;
+    margin-left: auto;
+    display: none;
+    border: none;
+    background-image: url('images/menu.svg');
+    background-color: transparent;
+}
+
+
+/* Bottom media links */
+
+.media{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.media img{
+    padding-inline: 15px;
+}
+.bottom p{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+@media(max-width: 768px){
+    .menu{
+        padding-top: 20px;
+        cursor: pointer;
+    }
+
+    .menu a{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+    }
+}
+
+/* Article page */
+
+.article_page .conteiner{
+    max-width: 680px;
+}
+
+.article_page h1{
+    font-size: 34px;
+    max-width: 500px;
+}
+
+.article-bage{
+    background-color: #ff8b8b;
+    color: aliceblue;
+    font-style: 18px;
+    font-weight: bold;
+    border-radius: 16px;
+    padding: 0 10px;
+    margin-right: 17px;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+.article-topic{
+    font-style: 20px;
+    color: rgb(124, 124, 124);
+}
+
+.article_page img{
+    width: 100%;
+    margin-bottom: 72px;
+}
+
+.article-page h2{
+    font-size: 30px;
+    font-weight: 700px;
+}
+
+.article-page h3{
+    font-size: 24px;
+}
+
+.active{
+    color: red!important;
+}
+
+
+@media (max-width:768px) {
+
+    .conteiner{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .article_page h1{
+        font-size: 25px;
+    }
+    
+    .article-bage{
+        background-color: #ff8b8b;
+        color: aliceblue;
+        
+        font-weight: bold;
+        
+        display: inline-block;
+    }
+    
+    .article-topic{
+        font-size: 18px;
+    
+    }
+    
+    .article_page img{
+        width: 100%;
+        
+    }
+    
+    .article-page h2{
+        font-size: 26px;
+        text-align: left;
+    }
+    
+    .article-page h3{
+        font-size: 30px;
+    }
+
+}
