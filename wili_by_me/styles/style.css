@@ -1,0 +1,164 @@
+/* *{ 
+    margin: 0px;
+} */
+body{
+    margin: 0px;
+    padding: 0px;
+}
+/* content */
+
+span {
+    /* font-variant: initial; */
+    font-style: italic;
+/* створення коментаря */
+}
+
+.bold-text{
+    font-style: normal;
+    font-weight: bold;
+}
+
+.list-conteiner{
+    display: inline-block;
+    border-style: solid;
+    border-width: 0.2px;
+    border-color: rgb(170, 170, 170);
+    background-color: rgb(240, 240, 240);
+    padding-right: 15px;
+    padding-left: 1px;
+}
+
+.second-header{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.center-in-list{
+    text-align: center;
+    font-weight: bold;
+}
+
+/* .list-conteiner>p{
+    text-align: center;
+} так теж можна звернутись до класу center-in-list*/
+
+.main{
+    padding: 20px;
+}
+
+.main>h1{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(8, 8, 36);
+}
+
+.img-column{
+    border-color: rgb(170, 170, 170);
+    background-color: rgb(240, 240, 240);
+    float: right;
+    padding: 5px;
+    padding-top: 30px;
+    border-style: solid;
+    border-width: 0.5px;
+}
+
+.img-centre{
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+/* top-novigation */
+
+.nav-cont{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(200, 239, 255);
+}
+
+.nav-cont>nav>ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-cont>nav>ul>li>a{
+    display: block;
+    padding: 5px;
+    border-style: solid;
+    border-width: 0.5px;
+}
+
+.top-cont>nav>ul{
+    display: flex;
+    list-style: none;
+    /* align-items: center; */
+    margin: 0px;
+    padding: 0px;
+}
+
+@media (max-width: 900px) {
+    .nav-cont{
+        flex-direction: column;
+    }
+    .top-cont>nav{
+        flex-direction: column;
+    }
+    }
+
+.page{
+        /* justify-content: center; */
+        display: flex;
+    }
+
+.header{
+    border-color: rgb(170, 170, 170);
+    background-color: rgb(240, 240, 240);
+    width: 12%;
+}
+
+.section{
+    width: 86%;
+}
+
+.header>ul>li{
+    display: flex;
+    list-style: none;
+}
+
+.first{
+    /* border-bottom-style: solid;
+    border-bottom-width: 1px; */
+    border-width: 0.5px;
+    margin: 10px;
+    padding: 0px;
+    padding-bottom: 10px;
+}
+
+.header>div{
+    width: 100%;
+}
+
+.header>div>img{
+    /* display: flex;
+    align-items: center; */
+    width: 80%;
+}
+
+.header>h5{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-width: 0.5px;
+    margin: 10px;
+    padding: 0px;
+    padding-bottom: 10px;
+}
+
+.second{
+    border-width: 0.5px;
+    margin: 10px;
+    padding: 0px;
+    padding-bottom: 10px;
+}
